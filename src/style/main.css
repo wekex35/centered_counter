@@ -13,11 +13,18 @@ main {
 	background: #bada55;
 	width: 100vw;
 	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 20px;
 }
 
 .controls {
+	display: flex;
+	flex-direction: row;
 	top: 2rem;
 	left: 2rem;
+	align-items: left;
 }
 
 .control {
@@ -27,7 +34,7 @@ main {
 .control label {
 	display: block;
 	color: darkgreen;
-	margin-bottom:.2rem;
+	margin-bottom: .2rem;
 	text-transform: uppercase;
 }
 
@@ -45,10 +52,13 @@ main {
 	border-radius: .4rem;
 	border: 2px solid green;
 	box-shadow: 1px 1px 4px 2px #557668;
+	align-self: center;
+	top: 40%;
+	position: absolute;
 }
 
 .count_button:active {
-	box-shadow: none ;
+	box-shadow: none;
 	box-shadow: 1px 1px 1px 1px #557668;
 }
 
